@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="image to base64, base64 converter, image converter, jpg to base64, png to base64, gif to base64, free tool, online tool, encode image, decode base64, embed image, html image, css image">
+  <meta name="author" content="ImgBase64Converter">
+  <meta property="og:title" content="ImgBase64Converter - Free Image to Base64 Tool">
+  <meta property="og:description" content="Free, instant, and modern image ↔ base64 converter. Upload images and get base64 instantly.">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://haiderism.github.io/img-to-base64-converter/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ImgBase64Converter - Free Image to Base64 Tool">
+  <meta name="twitter:description" content="Free, instant, and modern image ↔ base64 converter. Upload images and get base64 instantly.">
+  <meta name="twitter:image" content="logo.png">
+  <link rel="canonical" href="https://haiderism.github.io/img-to-base64-converter/">
+  <meta name="description" content="ImgBase64Converter is a free and instant image-to-Base64 conversion tool. Upload your JPG, PNG, or GIF image and get the encoded Base64 string in one click. No signup needed. Perfect for embedding images directly into HTML/CSS or API requests.">
+  <title>ImgBase64Converter - Free Image to Base64 Tool</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="logo.png">
+  <!-- Google AdSense -->
+  <script data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+  <div class="main-bg"></div>
+  <div class="container">
+    <header class="main-header">
+      <div class="logo-row">
+        <img src="logo.png" alt="Logo" class="logo-img">
+        <h1>ImgBase64Converter</h1>
+      </div>
+      <p class="subtitle">Free, Instant, and Modern Image ↔ Base64 Converter</p>
+      <button id="darkModeToggle" aria-label="Toggle dark mode" class="md-icon-btn" title="Toggle dark mode">
+        <span id="darkModeIcon">🌙</span>
+      </button>
+    </header>
+    <main>
+      <div class="card-row">
+        <section class="card upload-card">
+          <h2>Encode Image to Base64</h2>
+          <label for="imageInput" class="upload-label">Upload JPG, PNG, or GIF</label>
+          <div id="dropArea" class="drop-area">Drag & Drop Image Here</div>
+          <input type="file" id="imageInput" accept="image/png, image/jpeg, image/gif">
+          <div id="imagePreview" class="image-preview"></div>
+          <div class="button-group">
+            <button id="copyBtn">Copy Base64</button>
+            <button id="downloadBtn">Download as .txt</button>
+            <button id="clearBtn" class="md-secondary">Clear</button>
+          </div>
+          <div id="outputInfo" class="output-info"></div>
+          <label for="base64Output" class="output-label">Base64 Output</label>
+          <textarea id="base64Output" readonly></textarea>
+        </section>
+        <section class="card decode-card">
+          <h2>Decode Base64 to Image</h2>
+          <label for="base64Input" class="decode-label">Paste Base64 string below</label>
+          <textarea id="base64Input" placeholder="Paste Base64 string here..."></textarea>
+          <div class="button-group">
+            <button id="decodeBtn">Decode</button>
+            <button id="clearDecodeBtn" class="md-secondary">Clear</button>
+            <button id="downloadDecodedBtn" class="md-secondary" style="display:none">Download Image</button>
+          </div>
+          <div id="decodedImagePreview" class="image-preview"></div>
+          <div id="decodeInfo" class="output-info"></div>
+        </section>
+      </div>
+      <section class="adsense-section">
+        <!-- Google AdSense Placeholder -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 ImgBase64Converter. No signup needed. Privacy-friendly.</p>
+      
+      <section class="donations-section" style="margin:32px auto 0 auto;max-width:420px;background:#f8fafc;border-radius:12px;box-shadow:0 2px 8px rgba(60,64,67,0.08);padding:24px 18px 18px 18px;text-align:center;">
+        <h3 style="margin-top:0;font-size:1.2rem;color:#1a73e8;">Support this Tool</h3>
+        <p style="margin-bottom:10px;color:#444;">If you find this tool helpful, you can support its development via:</p>
+        <ul style="list-style:none;padding:0;margin:0 0 10px 0;font-size:1.08rem;">
+          <li style="margin-bottom:6px;"><strong>JazzCash:</strong> <span style="letter-spacing:1px;">0305-4882522</span></li>
+          <li style="margin-bottom:6px;"><strong>Easypaisa:</strong> <span style="letter-spacing:1px;">0318-6940090</span></li>
+        </ul>
+        <p style="font-size:0.97rem;color:#666;margin-bottom:0;">After sending your donation, please take a screenshot as proof and email it to <a href="mailto:alimola2522@gmail.com" style="color:#1a73e8;text-decoration:underline;">alimola2522@gmail.com</a>.</p>
+      </section>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
